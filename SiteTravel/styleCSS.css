@@ -1,76 +1,67 @@
+/*
+    1. Global styles
+    2. Menu
+    3. Home
+    4. About
+    5. Contact Form
+    6. What to visit page
+    7. Holiday paragraphs
+    9. Icons
+    10. Mobile
+
+*/
+
+/*#region Global styles*/
+/*********** Global styles ************/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-padding-top: 120px;
+}
 
 body {
-    background: rgb(244, 245, 247);
-    font-family: 'Times New Roman', Times, serif;
+    background: white;
+    font-family: 'Quattrocento Sans', sans-serif;
     margin: 0;
 }
-  
-
-/*********** Continut centrat cu margini gri ************/
 
 main {
     background: white;
-    height: max-content;
     margin: auto;
     max-width: 65%;
 }
 
-/********* Menu ********/
-
-nav {    
-    background-color: rgb(28, 28, 75);
-    padding: 0.6% 20% 0.6% 17.5%;
+.logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 120px;
 }
 
-nav a {
-    color: white;
-    float: none;
-    font-size:23px;
-    padding: 0.8% 1.1%;
-    text-align: center;
-    text-decoration: none;   
+.logo img{
+    float: left;
+    padding: 0px 15px;
+    margin: 0 !important;
 }
 
-nav a:hover {
-    background-color: rgb(2, 2, 48);
-    color: white;
+.logo h1 {
+    background-color:  rgb(146, 214, 227);
+    color: rgb(11, 161, 75);
+    display: inline;
+    font-size: 45px;
+    font-weight: 100;
+    padding: 5px 15px;
 }
 
-nav .active {
-    background-color: rgb(2, 2, 48);
-    color: white;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    background-color: rgb(28, 28, 75);
-    display: none;
-    margin: 4px 0 0 175%;
-    padding: 0;
-    position: absolute;
-    width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content a{
-    display: block;
-    text-align: center;
-}  
-  
-.dropdown:hover .dropdown-content {
-      display: block;
+h1 .h1Color {
+    font-weight: 700;
+    color: rgb(16, 75, 160);
 }
 
 a {
     text-decoration: none;
-}
-
-li {
-    color: rgb(15, 23, 31);
-    margin-left: 80px;
 }
 
 li a{
@@ -78,25 +69,10 @@ li a{
     font-size: 20px;
 }
 
-h1 {
-    padding: 4%;
-    text-align: center;
-    margin-top: 0;
-    font-size: 45px;
-}
-
 h3 {
-    font-size: 25px;
     color: rgb(15, 23, 31);
-}
-
-blockquote {
-    color: lightslategray;
-    font-size: 23px;
-    font-weight: 200;
-    margin-top: 0;
-    padding: 0 10% 20px 30%;
-    text-align: end;   
+    font-size: 20px;
+    font-weight: 100;
 }
 
 p {
@@ -106,57 +82,270 @@ p {
 }
 
 img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px ;
     display: block;
     margin: 0 auto;
 }
 
+.column,
+.column2 {
+    float: left;
+    font-size: 13px;
+    margin-top: 40px;
+    padding: 20px;
+    width: 50%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header {
+    background-image: url("./images/banner.jpg");
+}
+
+/*#endregion*/
+
+
+/*#region Menu*/
+/********* Menu ********/
+
+nav {
+    background-color: rgba(2, 2, 48, 0.712);
+    padding: 0.6% 20% 0.6% 18%;
+}
+
+nav a {
+    color: white;
+    float: none;
+    font-size:20px;
+    font-weight: 100;
+    padding: 0.8% 1.1%;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav .active {
+    background-color: rgb(2, 2, 48);
+}
+
+.dropdown {
+    padding: 0 10px;
+    position: absolute;
+}
+
+.dropdown-content {
+    background-color: rgb(28, 28, 75);
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    display: block;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+      display: block;
+      margin: 0px -20px;
+      width: 140px;
+}
+
+#contactNav a{
+    display: inline;
+    font-size: 15px;   
+}
+
+#searchBar {
+    height: 25px;
+    width: 200px;
+}
+
+.search {
+    float: right;
+    width: 240px;
+    margin-left: 20px;
+}
+
+
+/* Menu at scroll  */
+
+.sticky {
+    background-color: rgb(28, 28, 75);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sticky a {
+    font-size: 15px;
+}
+
+.sticky #searchBar {
+    height: 20px;
+}
+
+#contactNav .topIcons {
+    float: right;
+    width: 200px;
+}
+
+.topIcons a {
+    padding: 8px;
+}
+/*#endregion*/
+
+
+/*#region Home Page*/
 /*********** Home:Regiuni ***********/
 
 #homePage .regions {
-    font-size: 23px; 
+    font-size: 23px;
     font-weight: 300;
-    margin-bottom: 60px;
 }
 
-#homePage .regions a {
+#homePage main {
+    max-width: 100%;
+}
+
+#homePage .full-columns {
+    max-width: 65%;
+    margin: auto;
+}
+
+#homePage .column2 {
+    background-color: rgb(160, 202, 143);
+    height: 320px;
+    margin: 20px 0;
+}
+
+#homePage .column2 p {
+    margin-right: 40%;
+}
+
+#homePage p a {
     color: rgb(2, 2, 48);
-    margin-left: 100px;
+    text-decoration: underline;
 }
 
-#homePage .regions img {
-    width: 80%; 
+#homePage .container {
+    position: relative;
 }
 
+#homePage h2 a {
+    color: black;
+}
 
+#homePage .text-img {
+    bottom: 0;
+    font-weight: 200;
+    position: absolute;
+    right: 0;
+}
+
+#homePage .text-img a {
+    background-color: rgb(28, 28, 29);
+    color: white;
+    padding: 6px;
+}
+
+#homePage .europeImg,
+.middleEastImg {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 140px;
+    width: 100%;
+}
+
+#homePage .africaImg,
+#homePage .nAmericaImg,
+#homePage .sAmericaImg {
+    border: 1px solid black;
+    height: 270px;
+    width: 400px;
+    margin-left: 40%;
+}
+
+#homePage .europeImg {
+    background-image: url("images/europe.png");
+}
+
+#homePage .middleEastImg {
+    background-image: url("images/middel_east.jpg");
+}
+
+#homePage .africaImg {
+    background-image: url("images/africa.jpg");
+}
+
+#homePage .nAmericaImg {
+    background-image: url("images/NAmerica.jpg");
+}
+
+#homePage .sAmericaImg {
+    background-image: url("images/SAmerica.png");
+}
+/*#endregion*/
+
+
+/*#region About Page*/
 /************** About:Paragraf *************/
 
-#aboutPage .text {
-    margin-top: 60px;
-    padding: 0 60px;
+#aboutPage .column img {
+    border-radius: 15px;
+    box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.342);
+    margin-top: 100px;
+    width: 90%;
 }
 
-#aboutPage img {
-    width: 65%;
-    padding: 60px 0;
+/*#endregion*/
+
+
+/*#region Contact us Page*/
+/************ Contact us form **********/
+
+#contactPage main {
+    max-width: 100%;
 }
-
-
-/************ Formular contact **********/
 
 #contactPage form {
-   width: 60%;
-   margin: 0 auto;
+    background-color: rgba(249, 251, 252, 0.8);
+    border-radius: 10px;
+    left: 25%;
+    position: absolute;
+    top: 120px;
+    width: 50%;
+}
+
+/*!!! vezi map-ul sa arate bine si pe ecrane mai mici--- se suprapune peste footer; form-ul iese din map si map-ul nu mai e centrat*/
+#contactPage .map {
+    height: 100%;
+    margin-top: 0;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
 input,
 textarea {
-    font-size: 18px;
-    margin-bottom: 20px;
+    border: 1px solid rgb(133, 133, 134);
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
     width: 100%;
 }
 
 input {
-    height: 25px;  
+    height: 30px;
 }
 
 textarea {
@@ -168,98 +357,266 @@ textarea:hover {
     border-color: rgb(2, 2, 48);
 }
 
-#contactPage input[type=submit] {
-    width: 100px;
-    height: 30px;
+#contactPage input[type=submit],
+input[type=button] {
+    background-color: rgb(2, 2, 48);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    height: 40px;
+    margin-top: 14px;
+    width: 120px;
 }
 
 label {
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 400;
 }
 
+#contactPage form p {
+    color: rgb(218, 12, 12);
+    font-weight: 200;
+    text-indent: 0;
+}
 
-/******** Places page *********/
+/*#endregion*/
+
+
+/*#region What to visit*/
+/******** What to visit page *********/
 
 #whatToVisitPage .Lists {
-    padding: 0 60px;
+    padding: 0;
 }
 
 #whatToVisitPage ol {
-    font-size: 18px;
-    padding-left: 0;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+#whatToVisitPage .Lists h2 {
+    background-color: rgb(2, 2, 48);
+    width: 100%;
 }
 
 #whatToVisitPage .Lists a {
-    color: black;
-    font-size: 30px;   
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 10px;
 }
 
-.description,
-.cities {
-    padding: 0 60px; 
+#whatToVisitPage .column {
+    margin-top: 0;
+}
+/*#endregion*/
+
+
+/*#region Each region page*/
+/***** Each region page paragraphs******/
+
+#europePage h2,
+#africaPage h2,
+#middleEastPage h2,
+#northAmericaPage h2,
+#southAmericaPage h2{
+    padding-left: 20px;
 }
 
 .cities {
-    margin: 40px 0;
+    margin: 40px 20px;
 }
 
 .cities img {
-    width: 60%;
+    width: 100%;
+}
+/*#endregion*/
+
+
+/*#region Icons*/
+/******** Icons *********/
+
+#footer {
+    background-color: rgb(2, 2, 48);
+    margin-bottom: 0;
+    width: 100%;
 }
 
+.icons {
+    padding-top: 10px;
+    text-align: center;
+}
 
+.icons a {
+    font-size:25px;
+}
+
+.icons a:hover,
+.footerLinks a:hover {
+    color: rgb(133, 135, 136);
+}
+
+.footerLinks {
+    margin-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons a,
+.footerLinks a {
+    color: white;
+    padding: 0px 20px;
+}
+
+/*#endregion*/
+
+
+/*#region Mobile*/
 /* Mobile*/
 
-@media(max-width:800px) {
-    body {
-        background: white;
-    }
-
+@media(max-width:767px) {
     main {
         max-width: 100%;
+        min-height: 500px;
     }
     
+    .dropdown:hover .dropdown-content {
+        display: block;
+        margin: 0px -70px;
+        width: 110px;
+    }
+
+    .column,
+    .column2 {
+        height: min-content;
+        margin: 10px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .logo {
+        padding: 50px;
+        margin-left: 10px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+        padding: 0px;
+    }
+
+    li {
+        margin-left: 10px;
+    }
+
     nav {
         padding: 0.8% 10%;
     }
 
-    .dropdown-content {
-        margin: 4px 0 0 160%;
+    nav a,
+    .sticky a {
+        font-size: 13px;
     }
 
-    blockquote {
-        font-size: 17px;
+    #contactNav a,
+    .icons a {
+        font-size: 12px;
     }
 
-    #homePage .regions {
-        font-size: 20px;
+    #searchBar {
+        height: 20px;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .search {
+        display: inline;
+        float: none;
+    }
+
+    #contactNav span {
+        display: block;
+    }
+
+    #contactNav .topIcons {
+        float: none;
+    }
+
+    .topIcons a {
+        padding: 0 5px;
+    }
+
+    #homePage .regions p{
+        font-size: 12px;
         font-weight: 280;
     }
 
-    #homePage .regions a {
-        margin-left: 50px;
+    #homePage .europeImg,
+    #homePage .middleEastImg {
+    height: 140px;
     }
 
-    #aboutPage .text {
-        font-size: 16px;
+    #homePage .africaImg,
+    #homePage .nAmericaImg,
+    #homePage .sAmericaImg {
+        margin-left: 0%;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    #homePage .column2 p {
+        margin-right: 0;
+    }
+
+    #homePage .text-img {
+        font-size: 10px;
+    }
+
+    #aboutPage p {
+        font-size: 13px;
+    }
+
+    #aboutPage .column img {
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    #contactPage form {
+        left: 0;
+        padding: 15px;
+        top: 120px;
+        width: 100%;
+    }
+
+    #contactPage .column a {
+        font-size: 15px;
     }
 
     label {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    #whatToVisitPage .Lists a {
-        font-size: 25px; 
-    }
-
-    ol {
-        font-size: 16px;
-    }
-
+    ol,
     p {
-        font-size: 16px;
+        font-size: 13px;
     }
 
+    .footerLinks a {
+        font-size:11px;
+    }
+
+    .icons a {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .footerLinks a {
+        padding: 3px;
+    }
 }
 
-
+/*#endregion*/
+ 

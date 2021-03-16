@@ -4,55 +4,137 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta charset="UTF-8">
       <link rel="stylesheet" href="styleCSS.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="images/favicon.ico" />
       <title>Contact</title>
     </head>
     <body id="contactPage">
-      <!-- Menu -->
-      <nav>
-        <a href="Home.html" title="Home Page">Home</a>
-        <a href="About.html" title="About Page">About</a>
-        <a class="active" href="Contact.html" title="Contact Form">Contact</a>
-        <span class="dropdown">
-          <a class="dropdown-button" href="Places.html" title="Find what to visit">What to visit?</a>
-          <div class="dropdown-content">
-              <a href="Europe.html" title="Best places to visit in Europe">Europe</a>
-              <a href="MiddleEast.html" title="Best places to visit in the Middle East">Middle East</a>
-              <a href="Africa.html" title="Best places to visit in Africa">Africa</a>
-              <a href="NorthAmerica.html" title="Best places to visit in North America">North America</a>
-              <a href="SouthAmerica.html" title="Best places to visit in South America">South America</a>
-          </div>
-        </span>    
-      </nav>
+      <div class="header">
+        <nav id="contactNav">
+          <span class="topContact">
+            <a href="tel:0756-432-178">Tel: +40756432178</a>
+            <a href="mailto:awesome_travels@travel.com">Email: awesome_holidays@travel.com</a>
+          </span>
+          <span class="topIcons">
+              <a href="Home.html" title="home"><i class="fa fa-home"></i></a>
+              <a href="#" title="Find us on Facebook"><i class="fa fa-facebook-square"></i></a>
+              <a href="#" title="Find us on Twitter"><i class="fa fa-twitter-square"></i></a>
+              <a href="#" title="Find us on Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" title="Send us a mail"><i class="fa fa-envelope"></i></a>
+          </span>
+        </nav>
+        <div class="logo">
+          <img src="./images/logo.png" alt="logo">
+          <h1><span class="h1Color">Contact </span>us</h1>
+        </div>
+        <!-- Menu -->
+        <nav id="navigation">
+          <a href="Home.html" title="Home Page">Home</a>
+          <a href="About.html" title="About Page">About</a>
+          <a class="active" href="Contact.html" title="Contact Form">Contact</a>
+          <a href="Places.html" title="Find what to visit">What to visit?</a>
+                <span class="dropdown">
+                    <a class="dropdown-button">
+                        <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="Europe.html" title="Best places to visit in Europe">Europe</a>
+                        <a href="MiddleEast.html" title="Best places to visit in the Middle East">Middle East</a>
+                        <a href="Africa.html" title="Best places to visit in Africa">Africa</a>
+                        <a href="NorthAmerica.html" title="Best places to visit in North America">North America</a>
+                        <a href="SouthAmerica.html" title="Best places to visit in South America">South America</a>
+                    </div>
+                </span>
+          <div class="search">
+            <input id="searchBar" type="text" placeholder="Search...">
+            <a>
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+        </nav>
+      </div>
       <main>
-          <h1>Contact us</h1>
-          <!-- Contact Form -->
-          <form id="contactForm">
-            <label for="firstName">First Name</label>
-            <div class="textbox">
-              <input type="text" id="firstName" required>
-            </div>
-            <label for="lastName">Last Name</label>
-            <div class="textbox">
-              <input type="text" id="lastName" required>
-            </div>
-            <label for="email">Email</label>
-            <div class="textbox">
-              <input type="email" id="email" required>
-            </div> 
-            <label for="telephone">Telephone</label>
-            <div class="textbox">
-              <input type="tel" id="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-0]{3}" required>
-            </div>
-            <label for="subject">Subject</label>
-            <div class="textbox">
-              <input type="text" id="subject" required>
-            </div>
-            <label for="mesage">Mesage</label>
-            <div class="textbox">
-              <textarea id="mesage" required>Write your mesage here...</textarea>
-            </div> 
-            <input type="submit" value="Send" id="sendButton">
-          </form>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182321.71624603283!2d25.954554063943487!3d44.43774014324156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f93abf3cad4f%3A0xac0632e37c9ca628!2sBucharest!5e0!3m2!1sen!2sro!4v1595945995856!5m2!1sen!2sro" width="2000" height="700" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+            <!-- Contact Form -->  
+            <form id="contactForm" onsubmit="return false;">
+              <div class="column">
+                <ul>
+                  <li>
+                    <a href="tel:0756-432-178">Tel: +40756432178</a>
+                  </li>
+                  <li>
+                    <a href="mailto:awesome_travels@travel.com">Email: awesome_holidays@travel.com</a>
+                  </li>
+                  <li>
+                    <a>Address: Electromagnetica Business Park, București 052034</a>
+                    </li>
+                </ul>
+              </div>
+              <div class="column">
+                <p id="thankYou"></p>
+                <span id="step1">
+                  <label for="firstName">First Name</label>
+                  <div class="textbox">
+                    <input type="text" id="firstName" required>
+                  </div>
+                  <p id="errFirstName"></p>
+                  <label for="lastName">Last Name</label>
+                  <div class="textbox">
+                    <input type="text" id="lastName" required>
+                  </div>
+                  <p id="errLastName"></p>
+                  <label for="email">Email</label>
+                  <div class="textbox">
+                    <input type="email" id="email" required>
+                  </div>
+                  <p id="errEmail"></p>
+                  <input type="button" value="More" id="moreButton">
+                  <p id="errMesage"></p>
+                </span>
+                <span id="step2">
+                  <label for="telephone">Telephone</label>
+                  <div class="textbox">
+                    <input type="text" id="telephone" required>
+                  </div>
+                  <p id="errTelephone"></p>
+                  <label for="subject">Subject</label>
+                  <div class="textbox">
+                    <input type="text" id="subject" required>
+                  </div>
+                  <p id="errSubject"></p>
+                  <label for="mesage">Mesage</label>
+                  <div class="textbox">
+                    <textarea id="mesage" required>Write your mesage here...</textarea>
+                  </div>
+                  <p id="errMesageBox"></p>
+                  <input type="button" value="Go back" id="backButton"><br>
+                  <input type="submit" value="Send" id="sendButton">
+                  <p id="end"></p>
+                </span>
+              </div>
+            </form>
+          </div>
+          <div class="clearfix"></div>
       </main>
+      <div id="footer">
+        <div class="icons">
+            <a href="Home.html"><i class="fa fa-home"></i></a>
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-twitter-square"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <div class="footerLinks">
+          <a href="Europe.html">Europe</a>
+                <a href="MiddleEast.html">Middle East</a>
+                <a href="Africa.html">Africa</a>
+                <a href="NorthAmerica.html">North America</a>
+                <a href="SouthAmerica.html">South America</a>
+        </div>
+      </div>
+      <script src="MenuScript.js"></script>
+      <script src="ContactScript.js"></script>
   </body>
-</html>
+</html> 

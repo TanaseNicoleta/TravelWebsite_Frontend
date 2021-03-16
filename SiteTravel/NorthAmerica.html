@@ -4,30 +4,55 @@
         <meta name="viewport" content = "width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styleCSS.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico" />
         <title>North America</title>
     </head>
     <body id="northAmericaPage">
-        <nav>
-            <a href="Home.html" title="Home Page">Home</a>
-            <a href="About.html" title="About Page">About</a>
-            <a href="Contact.html" title="Contact Form">Contact</a>
-            <span class="dropdown">
-                <a class="dropdown-button" href="Places.html" title="Find what to visit">What to visit?</a>
-                <div class="dropdown-content">
-                    <a href="Europe.html" title="Best places to visit in Europe">Europe</a>
-                    <a href="MiddleEast.html" title="Best places to visit in the Middle East">Middle East</a>
-                    <a href="Africa.html" title="Best places to visit in Africa">Africa</a>
-                    <a href="NorthAmerica.html" title="Best places to visit in North America">North America</a>
-                    <a href="SouthAmerica.html" title="Best places to visit in South America">South America</a>
+        <div class="header">
+            <nav id="contactNav">
+                <a href="tel:0756-432-178">Tel: +40756432178</a>
+                <a href="mailto:awesome_travels@travel.com">Email: awesome_holidays@travel.com</a>
+                <span class="topIcons">
+                    <a href="Home.html" title="home"><i class="fa fa-home"></i></a>
+                    <a href="#" title="Find us on Facebook"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#" title="Find us on Twitter"><i class="fa fa-twitter-square"></i></a>
+                    <a href="#" title="Find us on Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" title="Send us a mail"><i class="fa fa-envelope"></i></a>
+                </span>
+            </nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+                <h1><span class="h1Color">North </span>America</h1>
+            </div>
+            <nav id="navigation">
+                <a href="Home.html" title="Home Page">Home</a>
+                <a href="About.html" title="About Page">About</a>
+                <a href="Contact.html" title="Contact Form">Contact</a>
+                <a href="Places.html" title="Find what to visit">What to visit?</a>
+                <span class="dropdown">
+                    <a class="dropdown-button">
+                        <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="Europe.html" title="Best places to visit in Europe">Europe</a>
+                        <a href="MiddleEast.html" title="Best places to visit in the Middle East">Middle East</a>
+                        <a href="Africa.html" title="Best places to visit in Africa">Africa</a>
+                        <a href="NorthAmerica.html" title="Best places to visit in North America">North America</a>
+                        <a href="SouthAmerica.html" title="Best places to visit in South America">South America</a>
+                    </div>
+                </span>
+                <div class="search">
+                    <input id="searchBar" type="text" placeholder="Search...">
+                    <a>
+                        <i class="fa fa-search"></i>
+                    </a>
                 </div>
-            </span>  
-        </nav>
+            </nav>
+        </div>
         <main>
-            <h1>North America</h1>
-            <p class="description">
-                The heart of North America beats through towering forests, undulating fields, high-plain deserts, pulsating metropolises and offbeat oases. A historical melting pot of cultures and identities, North America features some of the world’s most multicultural art. From Toronto's film festival to Mexico City's thriving music scene, North America is a veritable smorgasbord of enlightening experiences just waiting to be uncovered.<br><br>
-                <b>Here's what to visit:</b>
-            </p> 
+            <h2>Here's what to visit:</h2>
             <ol>
                 <li><a href="#yellowstone" title="More about Yellowstone National Park">Yellowstone National Park</a></li>
                 <li><a href="#newYork" title="More about New York City">New York City</a></li>
@@ -36,7 +61,7 @@
                 <li><a href="#chicago" title="More about Chicago">Chicago</a></li>
                 <li><a href="#rushmore" title="More about Mount Rushmore">Mount Rushmore National Memorial</a></li>
                 <li><a href="#ohio" title="More about Ohio">Ohio</a></li>
-            </ol>              
+            </ol>
             <div class="cities">
                 <section id="yellowstone">
                     <h2>Yellowstone National Park</h2>
@@ -75,7 +100,7 @@
                 </section>
                 <section id="rushmore">
                     <h2>Mount Rushmore National Memorial</h2>
-                    <img src="images/NorthAmerica/rushmore.jpg" alt="Mount Rushmore View">
+                    <img src="images/NorthAmerica/rushmore.png" alt="Mount Rushmore View">
                     <p>
                         I could fit into George Washington's nose.” The 10-year-old next to me peered through his binoculars, slowly examining the four granite profiles looming above us. “The sculpted faces measure about 60ft,” a National Park Service ranger explained to us. “And the eyes of George Washington, Thomas Jefferson, Abraham Lincoln and Theodore Roosevelt are 11ft wide.” Cue the youngster's inevitable response: “Wow!”. High above the ponderosa pines, the 5,725ft-high mountain stands out against a deep blue sky. Although familiar from films and posters, the reality of Mount Rushmore is awe-inspiring. I can only echo the boy's reaction.
                     </p>
@@ -89,5 +114,22 @@
                 </section>
             </div>
         </main>
+        <div id="footer">
+            <div class="icons">
+                <a href="Home.html"><i class="fa fa-home"></i></a>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="footerLinks">
+                <a href="Europe.html">Europe</a>
+                <a href="MiddleEast.html">Middle East</a>
+                <a href="Africa.html">Africa</a>
+                <a href="NorthAmerica.html">North America</a>
+                <a href="SouthAmerica.html">South America</a>
+            </div>
+        </div>
+        <script src="MenuScript.js"></script>
     </body>
 </html>

@@ -4,30 +4,55 @@
         <meta name="viewport" content = "width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styleCSS.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico" />
         <title>Middle East</title>
     </head>
     <body id="middleEastPage">
-        <nav>
-            <a href="Home.html" title="Home Page">Home</a>
-            <a href="About.html" title="About Page">About</a>
-            <a href="Contact.html" title="Contact Form">Contact</a>
-            <span class="dropdown">
-                <a class="dropdown-button" href="Places.html" title="Find what to visit">What to visit?</a>
-                <div class="dropdown-content">
-                    <a href="Europe.html" title="Best places to visit in Europe">Europe</a>
-                    <a href="MiddleEast.html" title="Best places to visit in the Middle East">Middle East</a>
-                    <a href="Africa.html" title="Best places to visit in Africa">Africa</a>
-                    <a href="NorthAmerica.html" title="Best places to visit in North America">North America</a>
-                    <a href="SouthAmerica.html" title="Best places to visit in South America">South America</a>
+        <div class="header">
+            <nav id="contactNav">
+                <a href="tel:0756-432-178">Tel: +40756432178</a>
+                <a href="mailto:awesome_travels@travel.com">Email: awesome_holidays@travel.com</a>
+                <span class="topIcons">
+                    <a href="Home.html" title="home"><i class="fa fa-home"></i></a>
+                    <a href="#" title="Find us on Facebook"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#" title="Find us on Twitter"><i class="fa fa-twitter-square"></i></a>
+                    <a href="#" title="Find us on Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" title="Send us a mail"><i class="fa fa-envelope"></i></a>
+                </span>
+            </nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+                <h1><span class="h1Color">Middle </span>East</h1>
+            </div>
+            <nav id="navigation">
+                <a href="Home.html" title="Home Page">Home</a>
+                <a href="About.html" title="About Page">About</a>
+                <a href="Contact.html" title="Contact Form">Contact</a>
+                <a href="Places.html" title="Find what to visit">What to visit?</a>
+                <span class="dropdown">
+                    <a class="dropdown-button">
+                        <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="Europe.html" title="Best places to visit in Europe">Europe</a>
+                        <a href="MiddleEast.html" title="Best places to visit in the Middle East">Middle East</a>
+                        <a href="Africa.html" title="Best places to visit in Africa">Africa</a>
+                        <a href="NorthAmerica.html" title="Best places to visit in North America">North America</a>
+                        <a href="SouthAmerica.html" title="Best places to visit in South America">South America</a>
+                    </div>
+                </span>
+                <div class="search">
+                    <input id="searchBar" type="text" placeholder="Search...">
+                    <a>
+                        <i class="fa fa-search"></i>
+                    </a>
                 </div>
-            </span>  
-        </nav>
+            </nav>
+        </div>
         <main>
-            <h1>Middle East</h1>
-            <p class="description">
-                Of all the regions of the world, the Middle East will give travelers some of their most unique experiences. The culture is very different from that in the West, and while some may be content to make judgments from afar, it's far better to go and experience a region known for its friendly people first-hand. After visiting the Middle East, most travelers are more likely to be humbled than anything else. The Middle East also has a rich variety of local cuisine for meat-eaters and vegetarians alike, and travelers won't find the cost of travel to weigh as heavily on their bank accounts as they would in Europe.<br><br>
-                <b>Here's what to visit:</b>
-            </p>
+            <h2>Here's what to visit:</h2>
             <ol>
                 <li><a href="#petra" title="More about Petra, Jordan">Petra, Jordan</a></li>
                 <li><a href="#amadiya" title="More about Amadiya, Iraq">Amadiya, Iraq</a></li>
@@ -35,7 +60,7 @@
                 <li><a href="#TelAviv" title="More about Tel Aviv, Israel">Tel Aviv, Israel</a></li>
                 <li><a href="#istanbul" title="More about Istanbul, Turkey">Istanbul, Turkey</a></li>
                 <li><a href="#doha" title="More about Doha, Qatar">Doha, Qatar</a></li>
-            </ol>               
+            </ol>
             <div class="cities">
                 <section id="petra">
                     <h2>Petra, Jordan</h2>
@@ -55,7 +80,7 @@
                     <h2>Dubai, UAE</h2>
                     <img src="images/middleEast/dubai.jpg" alt="Dubai View">
                     <p>
-                        Dubai has emerged as one of the world's leading international business centres and regional hubs. This cosmopolitan city of diversity is at the crossroad of the globe and has transformed itself into a buzzing international metropolis. With easy accessibility, state-of-the-art infrastructure and modern venues, Dubai is the place to be when it comes to business. 
+                        Dubai has emerged as one of the world's leading international business centres and regional hubs. This cosmopolitan city of diversity is at the crossroad of the globe and has transformed itself into a buzzing international metropolis. With easy accessibility, state-of-the-art infrastructure and modern venues, Dubai is the place to be when it comes to business.
                     </p>
                 </section>
                 <section id="TelAviv">
@@ -81,5 +106,22 @@
                 </section>
             </div>
         </main>
+        <div id="footer">
+            <div class="icons">
+                <a href="Home.html"><i class="fa fa-home"></i></a>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="footerLinks">
+                <a href="Europe.html">Europe</a>
+                <a href="MiddleEast.html">Middle East</a>
+                <a href="Africa.html">Africa</a>
+                <a href="NorthAmerica.html">North America</a>
+                <a href="SouthAmerica.html">South America</a>
+            </div>
+        </div>
+        <script src="MenuScript.js"></script>
     </body>
 </html>
