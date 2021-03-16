@@ -1,0 +1,265 @@
+
+body {
+    background: rgb(244, 245, 247);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+  
+
+/*********** Continut centrat cu margini gri ************/
+
+main {
+    background: white;
+    height: max-content;
+    margin: auto;
+    max-width: 65%;
+}
+
+/********* Menu ********/
+
+nav {    
+    background-color: rgb(28, 28, 75);
+    padding: 0.6% 20% 0.6% 17.5%;
+}
+
+nav a {
+    color: white;
+    float: none;
+    font-size:23px;
+    padding: 0.8% 1.1%;
+    text-align: center;
+    text-decoration: none;   
+}
+
+nav a:hover {
+    background-color: rgb(2, 2, 48);
+    color: white;
+}
+
+nav .active {
+    background-color: rgb(2, 2, 48);
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    background-color: rgb(28, 28, 75);
+    display: none;
+    margin: 4px 0 0 175%;
+    padding: 0;
+    position: absolute;
+    width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    display: block;
+    text-align: center;
+}  
+  
+.dropdown:hover .dropdown-content {
+      display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    color: rgb(15, 23, 31);
+    margin-left: 80px;
+}
+
+li a{
+    color: rgb(2, 2, 48);
+    font-size: 20px;
+}
+
+h1 {
+    padding: 4%;
+    text-align: center;
+    margin-top: 0;
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 25px;
+    color: rgb(15, 23, 31);
+}
+
+blockquote {
+    color: lightslategray;
+    font-size: 23px;
+    font-weight: 200;
+    margin-top: 0;
+    padding: 0 10% 20px 30%;
+    text-align: end;   
+}
+
+p {
+    font-size: 18px;
+    text-indent: 40px;
+    text-align: justify;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*********** Home:Regiuni ***********/
+
+#homePage .regions {
+    font-size: 23px; 
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+#homePage .regions a {
+    color: rgb(2, 2, 48);
+    margin-left: 100px;
+}
+
+#homePage .regions img {
+    width: 80%; 
+}
+
+
+/************** About:Paragraf *************/
+
+#aboutPage .text {
+    margin-top: 60px;
+    padding: 0 60px;
+}
+
+#aboutPage img {
+    width: 65%;
+    padding: 60px 0;
+}
+
+
+/************ Formular contact **********/
+
+#contactPage form {
+   width: 60%;
+   margin: 0 auto;
+}
+
+input,
+textarea {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input {
+    height: 25px;  
+}
+
+textarea {
+    height: 120px;
+}
+
+input:hover,
+textarea:hover {
+    border-color: rgb(2, 2, 48);
+}
+
+#contactPage input[type=submit] {
+    width: 100px;
+    height: 30px;
+}
+
+label {
+    font-size: 20px;
+}
+
+
+/******** Places page *********/
+
+#whatToVisitPage .Lists {
+    padding: 0 60px;
+}
+
+#whatToVisitPage ol {
+    font-size: 18px;
+    padding-left: 0;
+}
+
+#whatToVisitPage .Lists a {
+    color: black;
+    font-size: 30px;   
+}
+
+.description,
+.cities {
+    padding: 0 60px; 
+}
+
+.cities {
+    margin: 40px 0;
+}
+
+.cities img {
+    width: 60%;
+}
+
+
+/* Mobile*/
+
+@media(max-width:800px) {
+    body {
+        background: white;
+    }
+
+    main {
+        max-width: 100%;
+    }
+    
+    nav {
+        padding: 0.8% 10%;
+    }
+
+    .dropdown-content {
+        margin: 4px 0 0 160%;
+    }
+
+    blockquote {
+        font-size: 17px;
+    }
+
+    #homePage .regions {
+        font-size: 20px;
+        font-weight: 280;
+    }
+
+    #homePage .regions a {
+        margin-left: 50px;
+    }
+
+    #aboutPage .text {
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    #whatToVisitPage .Lists a {
+        font-size: 25px; 
+    }
+
+    ol {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+}
+
+

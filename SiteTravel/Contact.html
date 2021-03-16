@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="styleCSS.css">
+      <title>Contact</title>
+    </head>
+    <body id="contactPage">
+      <!-- Menu -->
+      <nav>
+        <a href="Home.html" title="Home Page">Home</a>
+        <a href="About.html" title="About Page">About</a>
+        <a class="active" href="Contact.html" title="Contact Form">Contact</a>
+        <span class="dropdown">
+          <a class="dropdown-button" href="Places.html" title="Find what to visit">What to visit?</a>
+          <div class="dropdown-content">
+              <a href="Europe.html" title="Best places to visit in Europe">Europe</a>
+              <a href="MiddleEast.html" title="Best places to visit in the Middle East">Middle East</a>
+              <a href="Africa.html" title="Best places to visit in Africa">Africa</a>
+              <a href="NorthAmerica.html" title="Best places to visit in North America">North America</a>
+              <a href="SouthAmerica.html" title="Best places to visit in South America">South America</a>
+          </div>
+        </span>    
+      </nav>
+      <main>
+          <h1>Contact us</h1>
+          <!-- Contact Form -->
+          <form id="contactForm">
+            <label for="firstName">First Name</label>
+            <div class="textbox">
+              <input type="text" id="firstName" required>
+            </div>
+            <label for="lastName">Last Name</label>
+            <div class="textbox">
+              <input type="text" id="lastName" required>
+            </div>
+            <label for="email">Email</label>
+            <div class="textbox">
+              <input type="email" id="email" required>
+            </div> 
+            <label for="telephone">Telephone</label>
+            <div class="textbox">
+              <input type="tel" id="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-0]{3}" required>
+            </div>
+            <label for="subject">Subject</label>
+            <div class="textbox">
+              <input type="text" id="subject" required>
+            </div>
+            <label for="mesage">Mesage</label>
+            <div class="textbox">
+              <textarea id="mesage" required>Write your mesage here...</textarea>
+            </div> 
+            <input type="submit" value="Send" id="sendButton">
+          </form>
+      </main>
+  </body>
+</html>
